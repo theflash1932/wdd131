@@ -1,0 +1,12 @@
+/*
+colors
+typography
+google fonts
+*/
+*               { font-family:Ubuntu; }  
+header span     { display:block }
+nav             { display:flex }
+nav a           { color:red }
+nav a:hover     { color:blue }
+main            { max-width:960px; margin:0 auto; text-align:center; }
+.card           { /*grid*/ }
