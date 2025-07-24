@@ -1,8 +1,4 @@
-/*
-colors
-typography
-google fonts
-*/
+
 *               { font-family:Ubuntu; margin:0; padding:0; }  
 header          { max-width:960px; margin:0 auto; }
 header #course-title { font-size: 48px; font-weight: bold; background-color: cornflowerblue; padding:20px; }
