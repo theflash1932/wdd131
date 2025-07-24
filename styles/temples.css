@@ -13,7 +13,7 @@ nav             { display:flex; background-color:gray; }
 nav a           { color:red; padding:20px; color:white; font-weight:bold; text-decoration:none; font-size:larger; }
 nav a:hover     { color:blue; background-color:lightgray; }
 */
-main            { max-width:960px; margin:0 auto; display:grid; }
+main            { max-width:960px; margin:0 auto; display:grid; text-align:center; }
 .grid           { grid-template-columns: 2fr 1fr; }
 main h2         { padding-top:30px; padding-bottom:10px; clear:both; }
 footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:cornflowerblue; }
@@ -28,13 +28,12 @@ nav             { display:flex; background-color:lightgray; }
 	margin: 0 auto;
 	max-width: 760px;
 }
-
 .navigation li {
 	display: none;
 }
 .navigation a {
 	display: block;
-	padding: 0.75rem;
+	padding: 20px;
 	text-align: left;
 	text-decoration: none;
 	color: black;
@@ -57,7 +56,8 @@ nav             { display:flex; background-color:lightgray; }
 	content: "X";
 }
 
-.temple-grid { display:grid; grid-template-columns:repeat(1,1fr); gap:30px; margin:20px 0; text-align:center; }
+.temple-grid { display:grid; grid-template-columns:repeat(1,1fr); gap:30px; margin:20px 0; }
+
 
 @media only screen and (min-width: 40em) {
 	h1 {
@@ -65,6 +65,7 @@ nav             { display:flex; background-color:lightgray; }
 	}
 	.navigation {
 		display: flex;
+        text-align:left;
 	}
 	.navigation li {
 		display: block; /* change state in small view */
@@ -77,5 +78,6 @@ nav             { display:flex; background-color:lightgray; }
 		display: none;
 	}
     .temple-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; margin-top:20px; }
+    main { text-align:left; }
 
 }
