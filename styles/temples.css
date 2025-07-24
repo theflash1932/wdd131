@@ -3,8 +3,8 @@
 header          { max-width:960px; margin:0 auto; }
 header #course-title { font-size: 48px; font-weight: bold; background-color: cornflowerblue; padding:20px; }
 header span     { display:block }
-h1              { padding-top:30px; padding-bottom:5px; border-bottom:1px solid black }
-h2  `````       { padding-top:30px; padding-bottom:10px; clear:both; }
+h1              { padding-top:30px; padding-bottom:5px; border-bottom:1px solid black; }
+h2              { padding-top:30px; padding-bottom:10px; clear:both; }
 main            { max-width:960px; margin:0 auto; display:grid; text-align:center; }
 .grid           { grid-template-columns: 2fr 1fr; }
 footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:cornflowerblue; }
