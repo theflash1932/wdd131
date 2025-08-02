@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="WDD 131 &dash; Dynamic Web Fundamentals, WDD131, WDD 131, home page, week 3, place, country, assignment">
+        <meta name="author" content="Greg Nielson, greg@gregnielson.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="styles/place.css" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+        <title>WDD 131 &dash; Dynamic Web Fundamentals &dash; Gregory Nielson</title>
+    </head>
+    <body>
+        <header>
+            <h1>Italia</h1>
+        </header>
+        <main>
+            <img src="images/italy-narrow.webp" alt="italy" class="hero">
+            <section class="data">
+                <h2>Data</h2>
+                <table>
+                    <tr><td>Area:</td><td>301,230 sq km</td></tr>
+                    <tr><td>Population:</td><td>58.99 million</td></tr>
+                    <tr><td>Capital:</td><td>Rome</td></tr>
+                    <tr><td>Languages:</td><td>Italian</td></tr>
+                    <tr><td>Currency:</td><td>Euro / Lira</td></tr>
+                    <tr><td>Time Zone:</td><td>GMT+2</td></tr>
+                    <tr><td>Calling Code:</td><td>+39</td></tr>
+                    <tr><td>Internet TLD:</td><td>.it</td></tr>
+                </table>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <table>
+                    <tr><td colspan="2" style="text-align:center;"><span id="now"></span></td></tr>
+                    <tr><td>Temperature:</td><td><span id="temp"></span></td></tr>
+                    <tr><td>Conditions:</td><td><span id="cond"></span></td></tr>
+                    <tr><td>Wind:</td><td><span id="wind"></span></td></tr>
+                    <tr><td>Wind Chill:</td><td><span id="wc"></span></td></tr>
+                </table>
+            </section>
+        <!--
+            The "hero" images must utilize the srcset responsive design method to provide 
+            different images based on screen size. You can choose to implement this 
+            requirement by using either the picture element or a basic img approach. 
+            Ensure that the images subjects and dimensions support the page's subject, 
+            design, and layout.
+            Should be WebP for "hero" images.
+            SVG for weather icon in mobile view.
+            Use an emoticon or equivalent for the weather icon ⛅ in the wider view by the "Weather" heading.
+        -->
+        </main>
+        <footer style="clear:both">
+            <p>
+                @<span id="currentyear"></span> Greg Nielson Utah, USA
+            </p>
+            <p id="lastmodified"></p>
+        </footer>
+    </body>
+</html>
+
