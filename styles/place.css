@@ -34,8 +34,10 @@ main td         { width:50%; }
 main table img  { width:100px }
 section         { margin-bottom:20px; }
 .now::before { 
-    content: url("images/conditions.svg");
+    content: url("https://theflash1932.github.io/wdd131/images/conditions.svg");
+    align-content: center;
 }    
+.now            { padding-left:50px; }
 
 /* Mobile View
 ***************/
