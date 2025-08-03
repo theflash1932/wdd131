@@ -22,7 +22,7 @@ else
 function calculateWindChill() {
     return windchill = 13.12 + (0.6215 * currentTemp) - (11.37 * (currentWind ** 0.16)) + (0.3965 * currentTemp * (currentWind ** 0.16));
 }
-now.innerHTML = "<img src='images/conditions.svg' alt='now'>"
+//now.innerHTML = "<img src='images/conditions.svg' alt='now'>"
 cond.innerHTML = "Mostly Sunny"
 wind.innerHTML = currentWind + " km/s"
 temp.innerHTML = currentTemp + " C"

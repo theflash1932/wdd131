@@ -17,7 +17,14 @@
             <h1>Italia</h1>
         </header>
         <main>
-            <img src="images/italy-narrow.webp" alt="italy" class="hero">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/italy-widejpg.webp" media="(min-width: 1000px)">
+                    <source srcset="images/italy-narrow.webp" media="(min-width: 500px)">
+                    <img src="images/italy-narrow.webp" alt="italy">
+                </picture>
+            </div>
+            <!--<img src="images/italy-narrow.webp" srcset="images/italy-narrow.webp 480px, images/italy-wide.webp 1200px" alt="italy" class="hero">-->
             <section class="data">
                 <h2>Data</h2>
                 <table>
@@ -34,7 +41,7 @@
             <section class="weather">
                 <h2>Weather</h2>
                 <table>
-                    <tr><td colspan="2" style="text-align:center;"><span id="now"></span></td></tr>
+                    <tr><td colspan="2" class="weather-icon"><span class="now">Weather</span></td></tr>
                     <tr><td>Temperature:</td><td><span id="temp"></span></td></tr>
                     <tr><td>Conditions:</td><td><span id="cond"></span></td></tr>
                     <tr><td>Wind:</td><td><span id="wind"></span></td></tr>
