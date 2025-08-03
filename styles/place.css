@@ -33,7 +33,7 @@ main table      { margin:0 auto; }
 main td         { width:50%; }
 main table img  { width:100px }
 section         { margin-bottom:20px; }
-.now::before { 
+.now::after { 
     content: url("https://theflash1932.github.io/wdd131/images/conditions.svg");
     align-content: center;
 }    
@@ -58,4 +58,8 @@ section         { margin-bottom:20px; }
     .weather h2 { padding:5px 0; background-color:darkred; color:white; }
     main table  { padding:10px; }
     main { position:relative; }
-}
+    .now::after { 
+        content: url("https://theflash1932.github.io/wdd131/images/conditions.jpg");
+        align-content: center;
+    }
+}  
