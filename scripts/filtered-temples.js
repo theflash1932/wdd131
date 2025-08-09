@@ -108,7 +108,7 @@ function buildTempleGrid(templeList) {
 		// tg.innerHTML = temples[0].templeName;
 		html += "<div class='card'>"
 		html += '<h3>' + templeList[i].templeName + '</h3><br>'
-		html += 'Location: ' + templeList[i].location + '<br>'
+    html += 'Location: ' + templeList[i].location + '<br>'
 		html += 'Dedicated: ' + templeList[i].dedicated + '<br>'
 		html += 'Size: ' + templeList[i].area + ' sq ft<br>'
 		html += '<figure><img src=' + templeList[i].imageUrl + ' alt="' + templeList[i].templeName + '" loading="lazy"></figure>'

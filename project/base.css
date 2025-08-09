@@ -1,0 +1,17 @@
+
+*               { font-family:Ubuntu; margin:0; padding:0; }  
+header          { max-width:960px; margin:0 auto; }
+header #course-title { font-size: 48px; font-weight: bold; background-color:#7E95FC; padding:20px; }
+header span     { display:block }
+h1              { padding-top:30px; padding-bottom:5px; border-bottom:1px solid black }
+nav             { display:flex; background-color:gray; }
+nav a           { color:red; padding:20px; color:white; font-weight:bold; text-decoration:none; font-size:larger; }
+nav a:hover     { color:blue; background-color:lightgray; }
+main            { max-width:960px; margin:0 auto; display:grid; }
+.grid           { grid-template-columns: 2fr 1fr; }
+main h2         { padding-top:30px; padding-bottom:20px; clear:both; color:#EA4F36; }
+main h3         { text-decoration:underline;}
+.card           { min-height: 300px; padding-bottom:30px; }
+.card div       { margin:30px; }
+.card div img   { margin-top:20px; }
+footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:#7E95FC; }
