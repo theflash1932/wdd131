@@ -30,12 +30,12 @@
         <main>
             <form method="get" action="review.html">
                 <label><strong>Product Name*</strong><br>
-                    <select id="productName" name="" required>
+                    <select id="productName" name="productName" required>
                         <option label="Select a product..." disabled selected>
                     </select>
                 </label>
                 <br>
-                <label><strong>Overall Rating*</strong><br>
+                <strong>Overall Rating*</strong><br>
                     <label>
                         <input type="radio" id="oneStar" name="overallRating" required>
                         One Star
@@ -56,7 +56,7 @@
                         <input type="radio" id="fiveStars" name="overallRating" required>
                         Five Stars
                     </label>
-                </label>
+               
                 <br>
                 <strong>Date of Installation*</strong><br>
                 <label><input type="date" id="installDate" name="installDate" required></label>
