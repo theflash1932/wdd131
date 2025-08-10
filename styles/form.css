@@ -1,17 +1,21 @@
 
-*               { font-family:Ubuntu; margin:0; padding:0; }  
+*               { font-family:Ubuntu; margin:0; padding:0; font-size:16px; }  
 header          { max-width:960px; margin:0 auto; }
 header #course-title { font-size: 48px; font-weight: bold; background-color: cornflowerblue; padding:20px; }
 header span     { display:block }
 h1              { background-color:cornflowerblue; padding:10px; }
 h2              { padding-top:30px; padding-bottom:10px; clear:both; }
-main            { max-width:960px; margin:0 auto; display:grid; text-align:center; }
+main            { max-width:960px; margin:0 auto; display:grid; text-align:center; position:relative; }
 .grid           { grid-template-columns: 2fr 1fr; }
 footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:cornflowerblue; }
 .card			{ width:fit-content; margin:10px; border:1px solid black; padding:10px; background-color:#eee; text-align:center; }
 .card img		{ margin:20px 10px 10px 10px; box-shadow:0 0 5px 5px cornflowerblue; }
 form			{ margin:20px; padding:20px; text-align:left; }
-#visits			{ text-decoration:underline; }
+input,option,textarea	{ padding:5px; }
+.boxWidth		{ width:200px; }
+.star			{ position:relative; top:2px; padding-left:2px; }
+.list			{ margin-bottom:8px;}
+button			{ padding:10px; }
 
 /* Mobile View
 ***************/
@@ -74,4 +78,8 @@ nav             { display:flex; background-color:lightgray; }
 	}
 	.temple-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:30px; margin-top:20px; }
     .main { text-align:center; }
+	.textbox { float:right; }
+	#text { position:absolute; top:35px; right:0; text-align:left; width:60%; }
+	#text p { width:100%; text-align: left;}
+	#text textarea { width:350px; height:400px; }
 }

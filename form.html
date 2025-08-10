@@ -16,81 +16,82 @@
     <body>
         <header>
             <h1>Product Review</h1>
-            <a id="menu" href="#"></a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" id="showAll">Home</a></li>
-                    <li><a href="#" id="oldTemples">Old</a></li>
-                    <li><a href="#" id="newTemples">New</a></li>
-                    <li><a href="#" id="largeTemples">Large</a></li>
-                    <li><a href="#" id="smallTemples">Small</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
             <form method="get" action="review.html">
-                <label><strong>Product Name*</strong><br>
+                <label class="space"><strong>Product Name*</strong><br><br>
                     <select id="productName" name="productName" required>
                         <option label="Select a product..." disabled selected>
                     </select>
                 </label>
-                <br>
-                <strong>Overall Rating*</strong><br>
+                <br><br>
+                <strong>Overall Rating*</strong><br><br>
                     <label>
                         <input type="radio" id="oneStar" name="overallRating" required>
-                        One Star
-                    </label>
+                        <img src="images/star.png" alt="star" class="star"> 
+                    </label><br>
                     <label>
                         <input type="radio" id="twoStars" name="overallRating" required>
-                        Two Stars
-                    </label>
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                    </label><br>
                     <label>
                         <input type="radio" id="threeStars" name="overallRating" required>
-                        Three Stars
-                    </label>
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                    </label><br>
                     <label>
                         <input type="radio" id="fourStars" name="overallRating" required>
-                        Four Stars
-                    </label>
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                    </label><br>
                     <label>
                         <input type="radio" id="fiveStars" name="overallRating" required>
-                        Five Stars
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
+                        <img src="images/star.png" alt="star" class="star">
                     </label>
                
-                <br>
-                <strong>Date of Installation*</strong><br>
+                <br><br>
+                <strong>Date of Installation*</strong><br><br>
                 <label><input type="date" id="installDate" name="installDate" required></label>
-                <br>
-                Useful Features<br>
-                
+                <br><br>
+                <strong>Useful Features</strong><br><br>
                 <label for="usefulDurable">
-                    <input type="checkbox" id="usefulDurable" name="usefulFeatures" value="durable">
+                    <input type="checkbox" id="usefulDurable" name="usefulFeatures" value="durable" class="list">
                     Durable
-                </label>
+                </label><br>
                 <label for="usefulEasy">
-                    <input type="checkbox" id="usefulEasy" name="usefulFeatures" value="easy">
+                    <input type="checkbox" id="usefulEasy" name="usefulFeatures" value="easy" class="list">
                     Ease of Use
-                </label>
+                </label><br>
                 <label for="usefulPerform">
-                    <input type="checkbox" id="usefulPerform" name="usefulFeatures" value="performance">
+                    <input type="checkbox" id="usefulPerform" name="usefulFeatures" value="performance" class="list">
                     Performance
-                </label>
+                </label><br>
                 <label for="usefulDesign">
-                    <input type="checkbox" id="usefulDesign" name="usefulFeatures" value="design">
+                    <input type="checkbox" id="usefulDesign" name="usefulFeatures" value="design" class="list">
                     Design
                 </label>
-                <br>
+                <br><br>
+                <div id="text">
                 <label>
-                    Written Review<br>
-                    <textarea id="writtenReview" name="writtenReview"></textarea>
+                    <p><strong>Written Review</strong></p><br>
+                    <textarea id="writtenReview" name="writtenReview" class="boxWidth" rows="5" placeholder="Please tell us all about your product..."></textarea>
                 </label>
-                <br>
+                <br><br>
+                </div>
                 <label>
-                    User Name<br>
-                    <input type="text" id="userName" name="userName">
+                    <strong>User Name</strong><br><br>
+                    <input type="text" id="userName" name="userName" class="boxWidth">
                 </label>
-                <br>
-                <button type="submit" value="sendReview">Send Review</button>
+                <br><br><br>
+                <button type="submit" value="sendReview"><strong>Send Review</strong></button>
             </form>
         </main>
         <footer>
