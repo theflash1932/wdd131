@@ -1,0 +1,77 @@
+
+*               { font-family:Ubuntu; margin:0; padding:0; }  
+header          { max-width:960px; margin:0 auto; }
+header #course-title { font-size: 48px; font-weight: bold; background-color: cornflowerblue; padding:20px; }
+header span     { display:block }
+h1              { background-color:cornflowerblue; padding:10px; }
+h2              { padding-top:30px; padding-bottom:10px; clear:both; }
+main            { max-width:960px; margin:0 auto; display:grid; text-align:center; }
+.grid           { grid-template-columns: 2fr 1fr; }
+footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:cornflowerblue; }
+.card			{ width:fit-content; margin:10px; border:1px solid black; padding:10px; background-color:#eee; text-align:center; }
+.card img		{ margin:20px 10px 10px 10px; box-shadow:0 0 5px 5px cornflowerblue; }
+form			{ margin:20px; padding:20px; text-align:left; }
+#visits			{ text-decoration:underline; }
+
+/* Mobile View
+***************/
+#menu           { display:block; font-size:2rem; font-weight:700; text-decoration:none; padding:0.5rem 0.75rem; background-color:#eee; color:#000; }
+#menu::before   { content:"≡"; }
+nav             { display:flex; background-color:lightgray; }
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 10px;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.temple-grid { display:grid; grid-template-columns:repeat(1,1fr); gap:30px; margin:20px 0; }
+
+
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+        text-align:left;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+	.temple-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:30px; margin-top:20px; }
+    .main { text-align:center; }
+}

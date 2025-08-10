@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="WDD 131 &dash; Dynamic Web Fundamentals, WDD131, WDD 131, temples, temple, week 2, assignment">
+        <meta name="author" content="Greg Nielson, greg@gregnielson.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="styles/form.css" rel="stylesheet">
+        <script src="scripts/form.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <title>WDD 131 &dash; Dynamic Web Fundamentals &dash; Gregory Nielson &dash; HMTL Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+            <a id="menu" href="#"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" id="showAll">Home</a></li>
+                    <li><a href="#" id="oldTemples">Old</a></li>
+                    <li><a href="#" id="newTemples">New</a></li>
+                    <li><a href="#" id="largeTemples">Large</a></li>
+                    <li><a href="#" id="smallTemples">Small</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Thank you!</h2>
+            <p>
+                Your review has been sent!
+            </p>
+            <p>
+                <span class="visits"></span>
+            </p>
+            <br><br>
+        </main>
+
+        <script id="rendered-js">
+            const visitDisplay = document.querySelector('.visits')
+            let numVisits = Number(window.localStorage.getItem("visits-ls"))
+            if(numVisits !== 0) {
+                visitDisplay.innerHTML = `<br>Number of products reviewed: ${numVisits}`
+            } else {
+                visitDisplay.innerHTML = `This is your first review!`
+            }
+
+            numVisits++
+
+            localStorage.setItem("visits-ls", numVisits)
+        </script>
+
+        <footer>
+            <p>
+                @<span id="currentyear"></span> Greg Nielson Utah, USA
+            </p>
+            <p id="lastmodified"></p>
+        </footer>
+    </body>
+</html>
