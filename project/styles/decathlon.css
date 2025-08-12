@@ -1,0 +1,76 @@
+
+*               { font-family:Ubuntu; margin:0; padding:0; }  
+header          { max-width:960px; margin:0 auto; background-color:#EA4F36; position:relative; }
+header img      { position:relative;top:3px; left:2px; }
+#title-header   { display:block; width:100%; height:100px; }
+h1              { display:inline; color:white; font-size:32px; padding-left:20px; position:relative; bottom:34px; }
+h2              { padding-top:30px; padding-bottom:10px; clear:both; }
+main            { max-width:960px; margin:0 auto; text-align:center; position:relative; }
+.grid           { grid-template-columns: 2fr 1fr; }
+footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:cornflowerblue; }
+.day            {position:relative;}
+#decathlon input[type="text"] { padding:5px; width:100px; position:absolute; right:0; }
+
+/* Mobile View
+***************/
+#menu           { display:block; font-size:2rem; font-weight:700; text-decoration:none; padding:0 0.75rem; padding-top:0; background-color:#eee; color:#000; }
+#menu::before   { content:"≡"; }
+nav             { display:flex; background-color:#d2dafc; text-align:right; }
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 10px 20px;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.days   { display:grid; grid-template-columns:repeat(1,1fr); gap:30px; margin:20px 0; }
+.day  { border:1px solid black; padding:20px; }
+
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size:48px;
+	}
+	.navigation {
+		display: flex;
+        text-align:left;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align:center;
+	}
+	#menu {
+		display: none;
+	}
+    .days { margin:20px auto; display:grid; grid-template-columns:repeat(2,1fr); gap:30px; margin-top:20px; width:900px; }
+    .day  { border:1px solid black; padding:20px; text-align:left; }
+
+}
