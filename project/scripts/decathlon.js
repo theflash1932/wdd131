@@ -16,6 +16,15 @@ lastm = document.querySelector("#lastmodified");
 mod = document.lastModified
 lastm.innerHTML = document.lastModified
 
+const deca = [
+    {
+        a: "a"
+    }
+];
+
+onePoints = document.getElementById("100mPoints")
+onePoints.innerHTML = "666"
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -118,30 +127,3 @@ function buildTempleGrid(templeList) {
 	tg.innerHTML = html;
 }
 
-buildTempleGrid(temples)
-
-const showAll = document.querySelector("#showAll");
-const oldTemples = document.querySelector("#oldTemples"); //pre 1900
-const newTemples = document.querySelector("#newTemples"); //post 2000
-const largeTemples = document.querySelector("#largeTemples"); //90000
-const smallTemples = document.querySelector("#smallTemples"); //10000
-
-showAll.addEventListener("click", () => {
-	buildTempleGrid(temples);
-});
-
-oldTemples.addEventListener("click", () => {
-	buildTempleGrid(temples.filter(temple => parseInt(temple.dedicated) < 1900));
-});
-
-newTemples.addEventListener("click", () => {
-	buildTempleGrid(temples.filter(temple => parseInt(temple.dedicated) > 2000));
-});
-
-largeTemples.addEventListener("click", () => {
-	buildTempleGrid(temples.filter(temple => parseInt(temple.area) > 90000));
-});
-
-smallTemples.addEventListener("click", () => {
-	buildTempleGrid(temples.filter(temple => parseInt(temple.area) < 10000));
-});

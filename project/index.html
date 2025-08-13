@@ -28,46 +28,100 @@
             </nav>
         </header>
         <main>
-            <h2>Home</h2>
             <form id="decathlon">
             <div class="days">
                 <section class="day">
+                    <h3>Day 1</h3>
                     <table>
-                        <tr><th colspan="4">Day 1</th></tr>
+                        <!--<tr><th colspan="4">Day 2</th></tr>-->
                         <tr>
                             <td>100m Dash</td>
-                            <td><label><input type="text" class="mark"></label></td>
+                            <td><label><input type="text" id="100mMark" class="mark"></label></td>
                             <td> = </td>
-                            <td><label><input type="text" class="result"></label></td>
+                            <td><span id="100mPoints" class="result"></span></td>
                         </tr>
                         <tr>
                             <td>Long Jump</td>
-                            <td><label><input type="text" class="mark"></label></td>
+                            <td><label><input type="text" id="longMark" class="mark"></label></td>
                             <td> = </td>
-                            <td><label><input type="text" class="result"></label></td>
+                            <td><span id="longPoints" class="result"></span></td>
                         </tr>
                         <tr>
                             <td>Shot Put</td>
-                            <td><label><input type="text" class="mark"></label></td>
+                            <td><label><input type="text" id="shotMark" class="mark"></label></td>
                             <td> = </td>
-                            <td><label><input type="text" class="result"></label></td>
+                            <td><span id="shotPoints" class="result"></span></td>
                         </tr>
                         <tr>
                             <td>High Jump</td>
-                            <td><label><input type="text" class="mark"></label></td>
+                            <td><label><input type="text" id="highMark" class="mark"></label></td>
                             <td> = </td>
-                            <td><label><input type="text" class="result"></label></td>
+                            <td><span id="highPoints" class="result"></span></td>
                         </tr>
                         <tr>
                             <td>400m Dash</td>
-                            <td><label><input type="text" class="mark"></label></td>
+                            <td><label><input type="text" id="400mMark" class="mark"></label></td>
                             <td> = </td>
-                            <td><label><input type="text" class="result"></label></td>
+                            <td><span id="400mPoints" class="result">555</span></td>
+                        </tr>
+                        <tr><td colspan="4">&nbsp;</td></tr>
+                        <tr>
+                            <td colspan="2" class="dayTotal">Day 1 Totals</td>
+                            <td colspan="2" class="dayPoints"><span id="dayTwoPoints">3000</span></td>
                         </tr>
                     </table>
                 </section>
                 <section class="day">
                     <h3>Day 2</h3>
+                    <table>
+                        <!--<tr><th colspan="4">Day 2</th></tr>-->
+                        <tr>
+                            <td>110m Hurdles</td>
+                            <td><label><input type="text" id="110mMark" class="mark"></label></td>
+                            <td> = </td>
+                            <td><span id="110mPoints" class="result"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Discus Throw</td>
+                            <td><label><input type="text" id="discusMark" class="mark"></label></td>
+                            <td> = </td>
+                            <td><span id="discusPoints" class="result"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Pole Vault</td>
+                            <td><label><input type="text" id="poleMark" class="mark"></label></td>
+                            <td> = </td>
+                            <td><span id="polePoints" class="result"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Javelin Throw</td>
+                            <td><label><input type="text" id="javMark" class="mark"></label></td>
+                            <td> = </td>
+                            <td><span id="javPoints" class="result">777</span></td>
+                        </tr>
+                        <tr>
+                            <td>1500m Run</td>
+                            <td><label><input type="text" id="1500mMark" class="mark"></label></td>
+                            <td> = </td>
+                            <td><span id="1500mPoints" class="result">1666</span></td>
+                        </tr>
+                        <tr><td colspan="4">&nbsp;</td></tr>
+                        <tr>
+                            <td colspan="2" class="dayTotal">Day 2 Totals</td>
+                            <td colspan="2" class="dayPoints"><span id="dayTwoPoints">3000</span></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div class="totals">
+                <section class="total">
+                    <table>
+                        <tr>
+                            <td colspan="2" class="decaTotal">Decathlon Total: </td>
+                            <td class="decaResult"><span id="decaTotal">5000</span></td>
+                            <td class="decaButton"><button type="submit">Score!</button></td>
+                        </tr>
+                    </table>
                 </section>
             </div>
             </form>

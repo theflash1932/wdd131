@@ -5,11 +5,17 @@ header img      { position:relative;top:3px; left:2px; }
 #title-header   { display:block; width:100%; height:100px; }
 h1              { display:inline; color:white; font-size:32px; padding-left:20px; position:relative; bottom:34px; }
 h2              { padding-top:30px; padding-bottom:10px; clear:both; }
+h3              { font-size:20px; margin-bottom:20px; }
 main            { max-width:960px; margin:0 auto; text-align:center; position:relative; }
 .grid           { grid-template-columns: 2fr 1fr; }
 footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:cornflowerblue; }
 
-#decathlon input[type="text"] { padding:5px; width:70px; }
+#decathlon input[type="text"] { padding:5px; margin:2px 0; width:70px; }
+
+.decaTotal      { font-size:32px; font-weight:bold; text-align:left; width:35%; }
+.decaButton     { text-align:right; }
+.decaResult     { font-size:32px; font-weight:bold; }
+.decaResult input { border:none; }
 
 /* Mobile View
 ***************/
@@ -32,7 +38,7 @@ nav             { display:flex; background-color:#d2dafc; text-align:right; }
 	color: black;
 	font-weight: 700;
 	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+	font-size: clamp(1.1rem, 2vmin, 1.5rem);
 }
 
 .navigation a:hover,
@@ -50,7 +56,7 @@ nav             { display:flex; background-color:#d2dafc; text-align:right; }
 }
 
 .days   { display:grid; grid-template-columns:repeat(1,1fr); gap:30px; margin:20px 0; }
-.day  { border:1px solid black; padding:20px; }
+.day  { border:1px solid black; padding:20px; width:75%; }
 
 @media only screen and (min-width: 40em) {
 	h1 {
@@ -70,7 +76,17 @@ nav             { display:flex; background-color:#d2dafc; text-align:right; }
 	#menu {
 		display: none;
 	}
-    .days { margin:20px auto; display:grid; grid-template-columns:repeat(2,1fr); gap:30px; margin-top:20px; width:900px; }
-    .day  { border:1px solid black; padding:20px; text-align:left; }
-
-}
+    .days { margin:30px auto; display:grid; grid-template-columns:repeat(2,1fr); gap:30px; margin-top:30px; width:900px; }
+    .day  { border:1px solid black; padding:20px; text-align:left; width:auto; padding-left:50px; }
+    .totals { margin:30px auto; display:grid; grid-template-columns:repeat(1,1fr); gap:30px; margin-top:30px; width:900px; }
+    .total { border:1px solid black; padding:20px; text-align:left; padding-left:50px; }
+    td,input {font-size:18px;}
+    button { font-size:24px; }
+    button { padding:5px 30px; background-color:#ACD65A; }
+    .day td:nth-of-type(2) {padding-left:30px;}
+    .day td:nth-of-type(3) {padding:0 10px;}
+    .day td:nth-of-type(4) span { width:100%; float:right; padding-left:30px; text-align:right; font-size:20px; } 
+    .dayPoints { font-size:20px; font-weight:bold; text-align:right;}
+    .total table { width:100%; }
+    .dayTotal { font-size:20px; font-weight:bold; }
+ }
