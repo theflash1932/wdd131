@@ -11,7 +11,7 @@ main            { max-width:960px; margin:0 auto; text-align:center; position:re
 footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:cornflowerblue; }
 
 #decathlon input[type="text"] { padding:5px; margin:2px 0; width:70px; }
-
+.active         { text-decoration:underline; }
 .decaTotal      { font-size:18px; font-weight:bold; text-align:left;  }
 .decaButton     { text-align:right; }
 .decaResult     { font-size:32px; font-weight:bold; padding-right:40px; }
