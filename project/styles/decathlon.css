@@ -74,7 +74,7 @@ td.decaButton {text-align:right;}
 /*.aboutPara { float:left; position:relative; }*/
 .aboutPara { border:none; padding:20px; text-align:left; width:auto; padding-left:50px; }
 .aboutPara h3:nth-of-type(2) { margin-top:30px; }
-.aboutPara img { width:auto; padding-bottom:30px; }
+.aboutPara img { width:auto; margin-bottom:30px; border:1px solid black; padding:1px; }
 .aboutImg { float:right; position:relative; }
 
 #record { margin:0px auto; }

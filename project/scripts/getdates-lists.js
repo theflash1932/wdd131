@@ -32,6 +32,7 @@ const americanRecord = [
     { event:"1500 Meters", mark:"4:14.48", points:"691" }
 ];
 
+// World record
 const record = document.getElementById("record")
 html = "<table>"
 html += "<tr><th>Event</th><th>Mark</th><th>Points</th></tr>"
@@ -41,9 +42,9 @@ decathlonRecord.forEach(r => {
 });
 
 html += "</table>"
-
 record.innerHTML = html
 
+// USA record
 const recordUSA = document.getElementById("recordUSA")
 htmlUSA = "<table>"
 htmlUSA += "<tr><th>Event</th><th>Mark</th><th>Points</th></tr>"
@@ -53,5 +54,4 @@ americanRecord.forEach(r => {
 });
 
 htmlUSA += "</table>"
-
 recordUSA.innerHTML = htmlUSA
