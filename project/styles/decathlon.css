@@ -12,7 +12,7 @@ footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; 
 
 #decathlon input[type="text"] { padding:5px; margin:2px 0; width:70px; }
 
-.decaTotal      { font-size:32px; font-weight:bold; text-align:left; width:35%; }
+.decaTotal      { font-size:16px; font-weight:bold; text-align:left; width:35%; }
 .decaButton     { text-align:right; }
 .decaResult     { font-size:32px; font-weight:bold; }
 .decaResult input { border:none; }
@@ -57,6 +57,15 @@ nav             { display:flex; background-color:#d2dafc; text-align:right; }
 
 .days   { display:grid; grid-template-columns:repeat(1,1fr); gap:30px; margin:20px 0; }
 .day  { border:1px solid black; padding:20px; text-align:left; width:auto; padding-left:50px; }
+.day td:nth-of-type(2) {padding-left:30px;}
+.day td:nth-of-type(3) {padding:0 10px;}
+.day td:nth-of-type(4) span { width:100%; float:right; padding-left:30px; text-align:right; font-size:20px; } 
+button { font-size:20px; }
+button { padding:5px 20px; background-color:#ACD65A; }
+td.decaButton {text-align:right;}
+.totals { margin:30px auto; display:grid; grid-template-columns:repeat(1,1fr); gap:30px; margin-top:30px; width:900px; }
+.total { border:1px solid black; padding:20px; text-align:left; padding-left:50px; }
+.dayTotal,.dayPoints {font-weight:bold;}
 
 @media only screen and (min-width: 40em) {
 	h1 {
@@ -89,4 +98,5 @@ nav             { display:flex; background-color:#d2dafc; text-align:right; }
     .dayPoints { font-size:20px; font-weight:bold; text-align:right;}
     .total table { width:100%; }
     .dayTotal { font-size:20px; font-weight:bold; }
+    .decaTotal { font-size:32px; font-weight:bold; text-align:left; width:35%; }
  }
