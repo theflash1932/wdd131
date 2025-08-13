@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="styles/decathlon.css" rel="stylesheet">
-        <script src="scripts/decathlon.js" defer></script>
+        <script src="scripts/getdates-lists.js" defer></script>
         <title>WDD 131 &dash; Dynamic Web Fundamentals &dash; Gregory Nielson &dash; Decathlon Records</title>
     </head>
     <body>
@@ -28,13 +28,37 @@
             </nav>
         </header>
         <main>
-
+            <section class="recordMain">
+                <h2>World Record</h2>
+                <h3>Kevin Mayer, France 2018<br><br>9126 POINTS</h3>
+                <span id="record"></span>
+            </section>
+            <section class="recordMain">
+                <h2>USA Record</h2>
+                <h3>Ashton Eaton, USA 2012<br><br>9045 POINTS</h3>
+                <span id="recordUSA"></span>
+            </section>
         </main>
         <footer>
             <p>
                 @<span id="currentyear"></span> Greg Nielson Utah, USA
             </p>
             <p id="lastmodified"></p>
+            <p class="visits">
+            <script id="rendered-js">
+                const visitDisplay = document.querySelector('.visits')
+                let numVisits = Number(window.localStorage.getItem("visits-rec"))
+                if(numVisits !== 0) {
+                    visitDisplay.innerHTML = `<br>You have visited this page ${numVisits} times.`
+                } else {
+                    visitDisplay.innerHTML = `<br>First visit, have fun!`
+                }
+
+                numVisits++
+
+                localStorage.setItem("visits-rec", numVisits)
+            </script>
+            </p>
         </footer>
     </body>
 </html>

@@ -15,7 +15,7 @@
     <body>
         <header>
             <div class="title-header">
-                <img src="deca.png" alt="decathlon">
+                <img src="deca.png" alt="decathlon" loading="lazy">
                 <h1>Decathlon Calculator</h1>
             </div>
             <a id="menu" href="#"></a>
@@ -131,6 +131,21 @@
                 @<span id="currentyear"></span> Greg Nielson Utah, USA
             </p>
             <p id="lastmodified"></p>
+            <p class="visits">
+            <script id="rendered-js">
+                const visitDisplay = document.querySelector('.visits')
+                let numVisits = Number(window.localStorage.getItem("visits-home"))
+                if(numVisits !== 0) {
+                    visitDisplay.innerHTML = `<br>You have visited this page ${numVisits} times.`
+                } else {
+                    visitDisplay.innerHTML = `<br>First visit, have fun!`
+                }
+
+                numVisits++
+
+                localStorage.setItem("visits-home", numVisits)
+            </script>
+            </p>
         </footer>
     </body>
 </html>

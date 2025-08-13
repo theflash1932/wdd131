@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="styles/decathlon.css" rel="stylesheet">
-        <script src="scripts/decathlon.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
         <title>WDD 131 &dash; Dynamic Web Fundamentals &dash; Gregory Nielson &dash; Decathlon About</title>
     </head>
     <body>
@@ -28,13 +28,56 @@
             </nav>
         </header>
         <main>
-
+            <div class="aboutPage">
+                <section class="aboutPara">
+                    <h3>What is the Decathlon</h3>
+                    <p>
+                        The decathlon is a two-day track-and-field competition made up of 
+                        ten events that test speed, strength, endurance, and skill across sprints, 
+                        jumps, throws, and a middle-distance run. Combining these diverse challenges 
+                        into a single contest, the decathlon is widely regarded as the ultimate 
+                        measure of all-around athletic ability. Since its debut at the 1912 Stockholm 
+                        Olympics, where Jim Thorpe claimed the first gold, the Olympic decathlon 
+                        champion has traditionally been honored with the unofficial but prestigious 
+                        title of “World’s Greatest Athlete.”
+                    </p>
+                    <h3>History</h3>
+                    <p>
+                        The modern decathlon was introduced at the 1912 Stockholm Olympics, inspired 
+                        by ancient Greek multi-event contests that tested a wide range of athletic 
+                        skills. That year, American Jim Thorpe dominated the inaugural competition, 
+                        setting a high standard and earning lasting fame. Over the decades, the event 
+                        has evolved in scoring methods and training techniques but has consistently 
+                        served as the benchmark for all-around athletic excellence, with champions 
+                        from Bruce Jenner in 1976 to Ashton Eaton in the 2010.
+                    </p>
+                </section>
+                <section class="aboutPara">
+                    <img src="images/deca1.webp" alt="shot put" loading="lazy">
+                    <img src="images/deca2.webp" alt="hurdles" loading="lazy">
+                </section>
+            </div>
         </main>
         <footer>
             <p>
                 @<span id="currentyear"></span> Greg Nielson Utah, USA
             </p>
             <p id="lastmodified"></p>
+            <p class="visits">
+            <script id="rendered-js">
+                const visitDisplay = document.querySelector('.visits')
+                let numVisits = Number(window.localStorage.getItem("visits-about"))
+                if(numVisits !== 0) {
+                    visitDisplay.innerHTML = `<br>You have visited this page ${numVisits} times.`
+                } else {
+                    visitDisplay.innerHTML = `<br>First visit, have fun!`
+                }
+
+                numVisits++
+
+                localStorage.setItem("visits-about", numVisits)
+            </script>
+            </p>
         </footer>
     </body>
 </html>

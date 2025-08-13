@@ -11,7 +11,6 @@ main            { max-width:960px; margin:0 auto; text-align:center; position:re
 footer          { clear:both; padding:20px 0; margin-top:10px; max-width:960px; margin:0 auto; text-align:center; background-color:cornflowerblue; }
 
 #decathlon input[type="text"] { padding:5px; margin:2px 0; width:70px; }
-.active         { text-decoration:underline; }
 .decaTotal      { font-size:18px; font-weight:bold; text-align:left;  }
 .decaButton     { text-align:right; }
 .decaResult     { font-size:32px; font-weight:bold; padding-right:40px; }
@@ -39,8 +38,9 @@ nav             { display:flex; background-color:#d2dafc; text-align:right; }
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1.1rem, 2vmin, 1.5rem);
+    
 }
-
+.navigation a.active { text-decoration:underline; }
 .navigation a:hover,
 .navigation a:active {
 	color: white;
@@ -68,6 +68,27 @@ td.decaButton {text-align:right;}
 .total { border:none; padding:20px; text-align:left; padding-left:50px; }
 .dayTotal,.dayPoints {font-weight:bold;}
 .dayPoints { font-size:20px; font-weight:bold; text-align:right;}
+
+/*.aboutPage { margin-bottom:30px; text-align:left; position:relative; display:grid; grid-template-columns:repeat(2,1fr); }*/
+.aboutPage { margin:30px auto; display:grid; grid-template-columns:repeat(2,1fr); gap:30px; margin-top:30px; width:900px; }
+/*.aboutPara { float:left; position:relative; }*/
+.aboutPara { border:none; padding:20px; text-align:left; width:auto; padding-left:50px; }
+.aboutPara h3:nth-of-type(2) { margin-top:30px; }
+.aboutPara img { width:auto; padding-bottom:30px; }
+.aboutImg { float:right; position:relative; }
+
+#record { margin:0px auto; }
+#record td,th { text-align:left; padding:2px 50px 2px 0; }
+#record td:nth-of-type(3) { text-align:right; }
+#record table { margin-bottom:30px; }
+
+#recordUSA { margin:0px auto; }
+#recordUSA td,th { text-align:left; padding:2px 50px 2px 0; }
+#recordUSA td:nth-of-type(3) { text-align:right; }
+#recordUSA table { margin-bottom:30px; }
+
+.recordMain { text-align:left; margin-left:50px; }
+.recordMain:first-of-type { margin-top:30px; }
 
 @media only screen and (min-width: 40em) {
 	h1 {
